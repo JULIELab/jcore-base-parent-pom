@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>jcore-base-parent</artifactId>
+	<artifactId>jcore-parent</artifactId>
 	<version>2.0.0</version>
 	<packaging>pom</packaging>
-	<description>The Parent POM of the JCoRe Base project.</description>
+	<description>The Parent POM for all JCoRe projects and dependencies.</description>
 	<organization>
 		<name>JULIE Lab, Germany</name>
 		<url>http://www.julielab.de</url>
@@ -23,11 +23,8 @@
 		<artifactId>oss-parent</artifactId>
 		<version>9</version>
 	</parent>
-	<name>JCoRe Base Parent POM</name>
+	<name>JCoRe Parent POM</name>
 	<properties>
-		<jcore-version>2.0.0</jcore-version>
-		<uima-version>2.6.0</uima-version>
-		<uimafit-version>2.1.0</uimafit-version>
 		<slf4j-version>1.7.12</slf4j-version>
 		<logback-version>1.1.3</logback-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -36,20 +33,10 @@
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>org.apache.uima</groupId>
-			<artifactId>uimaj-core</artifactId>
-			<version>${uima-version}</version>
-		</dependency>
-		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.8</version>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.uima</groupId>
-			<artifactId>uimafit-core</artifactId>
-			<version>${uimafit-version}</version>
 		</dependency>
 	</dependencies>
 	<dependencyManagement>
@@ -99,10 +86,10 @@
 			</plugin>
 		</plugins>
 	</reporting>
-	<url>https://github.com/JULIELab/jcore-base-parent-pom</url>
+	<url>https://github.com/JULIELab/jcore-parent-pom</url>
 	<scm>
-		<connection>scm:git:git@github.com:JULIELab/jcore-base-parent-pom.git</connection>
-		<developerConnection>scm:git:git@github.com:JULIELab/jcore-base-parent-pom.git</developerConnection>
-		<url>https://github.com/JULIELab/jcore-base-parent-pom</url>
+		<connection>scm:git:git@github.com:JULIELab/jcore-parent-pom.git</connection>
+		<developerConnection>scm:git:git@github.com:JULIELab/jcore-parent-pom.git</developerConnection>
+		<url>https://github.com/JULIELab/jcore-parent-pom</url>
 	</scm>
 </project>
