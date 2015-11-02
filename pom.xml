@@ -30,6 +30,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.7</maven.compiler.source>
 		<maven.compiler.target>1.7</maven.compiler.target>
+		<jcore-version>2.0.0</jcore-version>
 	</properties>
 	   <dependencies>
         <dependency>
