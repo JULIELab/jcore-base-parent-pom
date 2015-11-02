@@ -92,7 +92,4 @@
 		<developerConnection>scm:git:git@github.com:JULIELab/jcore-parent-pom.git</developerConnection>
 		<url>https://github.com/JULIELab/jcore-parent-pom</url>
 	</scm>
-	<modules>
-		<module>jcore-pipelines</module>
-	</modules>
 </project>
