@@ -55,6 +55,24 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+	<build>
+	   <plugins>
+	      <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.5</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+          </plugin>
+       </plugins>
+	</build>
 	<reporting>
 		<plugins>
 			<plugin>
@@ -86,21 +104,8 @@
 					<manifest>${basedir}/src/main/resources/META-INF/MANIFEST.MF</manifest>
 				</configuration>
 			</plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-gpg-plugin</artifactId>
-                <version>1.5</version>
-                <executions>
-                    <execution>
-                        <id>sign-artifacts</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>sign</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
 		</plugins>
+		
 	</reporting>
 	<url>https://github.com/JULIELab/jcore-parent-pom</url>
 	<scm>
