@@ -41,7 +41,7 @@
 		<maven.compiler.target>1.7</maven.compiler.target>
 	    <uima-version>2.6.0</uima-version>
         <uimafit-version>2.1.0</uimafit-version>
-		<jcore-version>2.2.0</jcore-version>
+		<jcore-version>2.3.0-SNAPSHOT</jcore-version>
 	</properties>
 	
 	<dependencies>
@@ -121,7 +121,7 @@
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.6.6</version>
+                <version>1.6.7</version>
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>sonatype-nexus-staging</serverId>
