@@ -40,7 +40,7 @@
 		<uima-version>2.10.2</uima-version>
 		<uimafit-version>2.4.0</uimafit-version>
 		<jcore-version>2.3.0-SNAPSHOT</jcore-version>
-		<jedis-version>1.0.0</jedis-version>
+		<costosys-version>1.0.0</costosys-version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -60,7 +60,7 @@
 	<parent>
 		<groupId>de.julielab</groupId>
 		<artifactId>julielab-parent</artifactId>
-		<version>2.1.0</version>
+		<version>2.1.1</version>
 	</parent>
 	<dependencyManagement>
 		<dependencies>
