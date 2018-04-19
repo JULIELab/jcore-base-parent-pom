@@ -40,7 +40,6 @@
 		<uima-version>2.10.2</uima-version>
 		<uimafit-version>2.4.0</uimafit-version>
 		<jcore-version>2.3.0-SNAPSHOT</jcore-version>
-		<costosys-version>1.0.0</costosys-version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -62,6 +61,7 @@
 		<artifactId>julielab-parent</artifactId>
 		<version>2.1.1</version>
 	</parent>
+	
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -69,6 +69,16 @@
 				<artifactId>jcore-descriptor-creator</artifactId>
 				<version>${project.version}</version>
 				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>de.julielab</groupId>
+				<artifactId>costosys</artifactId>
+				<version>1.0.2-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>de.julielab</groupId>
+				<artifactId>julie-xml-tools</artifactId>
+				<version>0.3.7</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
