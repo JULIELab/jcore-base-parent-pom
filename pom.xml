@@ -73,12 +73,12 @@
 			<dependency>
 				<groupId>de.julielab</groupId>
 				<artifactId>costosys</artifactId>
-				<version>1.0.2-SNAPSHOT</version>
+				<version>1.0.2</version>
 			</dependency>
 			<dependency>
 				<groupId>de.julielab</groupId>
 				<artifactId>julie-xml-tools</artifactId>
-				<version>0.3.7</version>
+				<version>0.3.8</version>
 			</dependency>
 			 <dependency>
                 <groupId>de.julielab</groupId>
