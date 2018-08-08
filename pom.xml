@@ -40,7 +40,7 @@
 		<uima-version>2.10.2</uima-version>
 		<uimafit-version>2.4.0</uimafit-version>
 		<uima-ducc-version>2.2.2</uima-ducc-version>
-		<jcore-version>2.3.0-SNAPSHOT</jcore-version>
+		<jcore-version>2.3.0</jcore-version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -62,7 +62,15 @@
 		<artifactId>julielab-parent</artifactId>
 		<version>2.2.0</version>
 	</parent>
-	
+	  <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+            </plugin>
+        </plugins>
+    </build>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
