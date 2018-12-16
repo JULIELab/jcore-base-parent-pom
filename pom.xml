@@ -35,16 +35,8 @@
         <uimafit-version>2.4.0</uimafit-version>
         <uima-ducc-version>2.2.2</uima-ducc-version>
         <jcore-version>2.3.0</jcore-version>
-        <jcore-parent-version>2.3.3-SNAPSHOT</jcore-parent-version>
+        <jcore-parent-version>2.3.4-SNAPSHOT</jcore-parent-version>
     </properties>
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
     <scm>
         <connection>scm:git:git://github.com/JULIELab/jcore-parent-pom.git</connection>
         <developerConnection>scm:git:https://github.com/JULIELab/jcore-parent-pom.git</developerConnection>
@@ -79,12 +71,12 @@
             <dependency>
                 <groupId>de.julielab</groupId>
                 <artifactId>julie-xml-tools</artifactId>
-                <version>0.4.1</version>
+                <version>0.4.2</version>
             </dependency>
             <dependency>
                 <groupId>de.julielab</groupId>
                 <artifactId>julielab-java-utilities</artifactId>
-                <version>1.0.3</version>
+                <version>1.0.4</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
