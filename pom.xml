@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <!-- Basics & Project Information -->
     <artifactId>jcore-parent</artifactId>
-    <version>2.3.5-SNAPSHOT</version>
+    <version>2.3.5</version>
     <packaging>pom</packaging>
     <name>JCoRe Parent POM</name>
     <description>The Parent POM for all JCoRe projects and dependencies.</description>
@@ -31,13 +31,13 @@
         </developer>
     </developers>
     <properties>
-    	<jcore-parent-version>2.3.5-SNAPSHOT</jcore-parent-version>
+    	<jcore-parent-version>2.3.5</jcore-parent-version>
         <uima-version>2.10.2</uima-version>
         <uimafit-version>2.4.0</uimafit-version>
         <uima-ducc-version>2.2.2</uima-ducc-version>
-        <jcore-version>2.3.3</jcore-version>
-        <jcore-types-version>2.3.4</jcore-types-version>
-        <jcore-utilities-version>2.3.3</jcore-utilities-version>
+        <jcore-version>2.3.8</jcore-version>
+        <jcore-types-version>2.3.8</jcore-types-version>
+        <jcore-utilities-version>2.3.8</jcore-utilities-version>
         <guava-version>27.0.1-jre</guava-version>
         <julielab-java-utilities-version>1.0.4</julielab-java-utilities-version>
     </properties>
@@ -74,7 +74,7 @@
             <dependency>
                 <groupId>de.julielab</groupId>
                 <artifactId>julie-xml-tools</artifactId>
-                <version>0.4.2</version>
+                <version>0.5.0</version>
             </dependency>
             <dependency>
                 <groupId>de.julielab</groupId>
