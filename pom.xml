@@ -3,9 +3,45 @@
     <modelVersion>4.0.0</modelVersion>
     <!-- Basics & Project Information -->
     <artifactId>jcore-parent</artifactId>
-    <version>2.3.5</version>
+    <version>2.4.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>JCoRe Parent POM</name>
+    <parent>
+        <groupId>de.julielab</groupId>
+        <artifactId>julielab-parent</artifactId>
+        <version>2.3.0-SNAPSHOT</version>
+    </parent>
+    <properties>
+        <jcore-parent-version>2.4.0-SNAPSHOT</jcore-parent-version>
+        <uima-version>2.10.2</uima-version>
+        <uimafit-version>2.4.0</uimafit-version>
+        <uima-ducc-version>2.2.2</uima-ducc-version>
+        <jcore-version>2.3.10-SNAPSHOT</jcore-version>
+        <jcore-types-version>2.3.10-SNAPSHOT</jcore-types-version>
+        <jcore-utilities-version>2.3.10-SNAPSHOT</jcore-utilities-version>
+        <guava-version>27.0.1-jre</guava-version>
+        <julielab-java-utilities-version>1.0.4</julielab-java-utilities-version>
+    </properties>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>de.julielab</groupId>
+                <artifactId>jcore-descriptor-creator</artifactId>
+                <version>2.3.2</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>de.julielab</groupId>
+                <artifactId>julie-xml-tools</artifactId>
+                <version>0.5.0</version>
+            </dependency>
+            <dependency>
+                <groupId>de.julielab</groupId>
+                <artifactId>julielab-java-utilities</artifactId>
+                <version>1.0.4</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <description>The Parent POM for all JCoRe projects and dependencies.</description>
     <organization>
         <name>JULIE Lab, Germany</name>
@@ -30,57 +66,9 @@
             <email>erik.faessler@uni-jena.de</email>
         </developer>
     </developers>
-    <properties>
-    	<jcore-parent-version>2.3.5</jcore-parent-version>
-        <uima-version>2.10.2</uima-version>
-        <uimafit-version>2.4.0</uimafit-version>
-        <uima-ducc-version>2.2.2</uima-ducc-version>
-        <jcore-version>2.3.8</jcore-version>
-        <jcore-types-version>2.3.8</jcore-types-version>
-        <jcore-utilities-version>2.3.8</jcore-utilities-version>
-        <guava-version>27.0.1-jre</guava-version>
-        <julielab-java-utilities-version>1.0.4</julielab-java-utilities-version>
-    </properties>
     <scm>
         <connection>scm:git:git://github.com/JULIELab/jcore-parent-pom.git</connection>
         <developerConnection>scm:git:https://github.com/JULIELab/jcore-parent-pom.git</developerConnection>
         <url>scm:git:https://github.com/JULIELab/jcore-parent-pom</url>
-  </scm>
-    <parent>
-        <groupId>de.julielab</groupId>
-        <artifactId>julielab-parent</artifactId>
-        <version>2.2.0</version>
-    </parent>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-                <version>2.5.3</version>
-                <configuration>
-                    <tagNameFormat>v@{project.version}</tagNameFormat>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>de.julielab</groupId>
-                <artifactId>jcore-descriptor-creator</artifactId>
-                <version>2.3.2</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>de.julielab</groupId>
-                <artifactId>julie-xml-tools</artifactId>
-                <version>0.5.0</version>
-            </dependency>
-            <dependency>
-                <groupId>de.julielab</groupId>
-                <artifactId>julielab-java-utilities</artifactId>
-                <version>1.0.4</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+    </scm>
 </project>
