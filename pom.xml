@@ -13,13 +13,13 @@
     </parent>
     <properties>
         <jcore-parent-version>2.5.1-SNAPSHOT</jcore-parent-version>
-        <uima-version>2.10.3</uima-version>
-        <uimafit-version>2.4.0</uimafit-version>
+        <uima-version>2.10.4</uima-version>
+        <uimafit-version>2.5.0</uimafit-version>
         <uima-ducc-version>2.2.2</uima-ducc-version>
         <jcore-version>2.5.0-SNAPSHOT</jcore-version>
         <jcore-types-version>2.5.0-SNAPSHOT</jcore-types-version>
         <jcore-utilities-version>2.5.0-SNAPSHOT</jcore-utilities-version>
-        <guava-version>27.1-jre</guava-version>
+        <guava-version>29.0-jre</guava-version>
     </properties>
     <dependencyManagement>
         <dependencies>
