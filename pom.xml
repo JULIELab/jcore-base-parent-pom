@@ -9,7 +9,7 @@
     <parent>
         <groupId>de.julielab</groupId>
         <artifactId>julielab-parent</artifactId>
-        <version>2.4.1</version>
+        <version>2.5.0-SNAPSHOT</version>
     </parent>
     <properties>
         <jcore-parent-version>2.5.1</jcore-parent-version>
@@ -26,7 +26,7 @@
             <dependency>
                 <groupId>de.julielab</groupId>
                 <artifactId>jcore-descriptor-creator</artifactId>
-                <version>2.5.1</version>
+                <version>2.6.0-SNAPSHOT</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
